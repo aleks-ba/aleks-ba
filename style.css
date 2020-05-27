@@ -56,22 +56,27 @@ body {
     padding: 0 8px;
     height: 30px;
     border-radius: 2px;
-    border: 1px solid #e2e2e2;
+    border: 1px solid #cacaca;
     margin-bottom: 16px;
 }
 
 .play-all-button {
+    background: #4596c5;
     margin-bottom: 15px;
-    height: 40px;
+    height: 32px;
     padding: 0 16px;
     border-radius: 2px;
-    color: grey;
+    color: white;
     border: none;
     outline: none;
     cursor: pointer;
     font-size: 16px;
     text-align: center;
+    margin-left: 16px;
+}
 
+.play-all-button:hover {
+    background: #3778a0;
 }
 
 .label {
@@ -85,4 +90,8 @@ body {
     font-size: 37px;
     color: #808080;
 
+}
+
+.info {
+    font-size: 10px;
 }

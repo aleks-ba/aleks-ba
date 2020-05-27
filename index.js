@@ -179,13 +179,9 @@ function interpolate() {
     const fx1 = min.d;
     const fx2 = max.d;
 
-    const result = fx1 + (x - x1) * ((fx2 - fx1) / (x2 - x1));
+    const result = (fx1 + (x - x1) * ((fx2 - fx1) / (x2 - x1))).toFixed(2);
 
     document.getElementById('result').innerHTML = result;
 
-    console.log(min.kk);
-    console.log(max.kk);
-
-    console.log(result);
 }
 
