@@ -179,7 +179,11 @@ function interpolate() {
     const fx1 = min.d;
     const fx2 = max.d;
 
-    const result = (fx1 + (x - x1) * ((fx2 - fx1) / (x2 - x1))).toFixed(2);
+    let result = fx1 + (x - x1) * ((fx2 - fx1) / (x2 - x1));
+    const splited = result.toString().split('.');
+     if (splited.length > 1 && splited[1].length >2)  {
+         result = result.toFixed(2);
+     }
 
     document.getElementById('result').innerHTML = result;
 
